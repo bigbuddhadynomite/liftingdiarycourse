@@ -6,7 +6,13 @@
       "mcp__neon__get_database_tables",
       "mcp__neon__describe_table_schema",
       "mcp__neon__run_sql_transaction",
-      "Bash(git -C \"c:/temp/ruby/liftingdiarycourse\" remote -v)"
+      "Bash(git -C \"c:/temp/ruby/liftingdiarycourse\" remote -v)",
+      "Bash(find /c/temp/ruby/liftingdiarycourse/node_modules/next/dist/docs -type f -name *.md)",
+      "Bash(ls -la /c/temp/ruby/liftingdiarycourse/drizzle*)",
+      "Bash(grep -r \"auth\\\\|currentUser\\\\|getAuth\" C:/temp/ruby/liftingdiarycourse/node_modules/@clerk/nextjs/dist/ --include=*.d.ts -l)",
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx shadcn@latest add calendar popover card --yes)"
     ]
   },
   "enableAllProjectMcpServers": true,
