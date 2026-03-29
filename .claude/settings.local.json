@@ -12,7 +12,8 @@
       "Bash(grep -r \"auth\\\\|currentUser\\\\|getAuth\" C:/temp/ruby/liftingdiarycourse/node_modules/@clerk/nextjs/dist/ --include=*.d.ts -l)",
       "Bash(npm run:*)",
       "Bash(npx tsc:*)",
-      "Bash(npx shadcn@latest add calendar popover card --yes)"
+      "Bash(npx shadcn@latest add calendar popover card --yes)",
+      "Bash(git push:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
