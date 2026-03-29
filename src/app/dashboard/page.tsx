@@ -1,4 +1,5 @@
 import { auth } from "@clerk/nextjs/server";
+import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getWorkoutsForUser } from "@/data/workouts";
 import { DashboardDatePicker } from "./date-picker";
@@ -35,20 +36,22 @@ export default async function DashboardPage({
         ) : (
           <div className="space-y-2">
             {workouts.map((workout) => (
-              <Card key={workout.id}>
-                <CardHeader className="pb-1 pt-4 px-4">
-                  <CardTitle className="text-base">
-                    {workout.name ?? "Untitled Workout"}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="pb-4 px-4">
-                  {workout.notes && (
-                    <p className="text-sm text-muted-foreground">
-                      {workout.notes}
-                    </p>
-                  )}
-                </CardContent>
-              </Card>
+              <Link key={workout.id} href={`/dashboard/workout/${workout.id}`}>
+                <Card className="hover:bg-accent transition-colors cursor-pointer">
+                  <CardHeader className="pb-1 pt-4 px-4">
+                    <CardTitle className="text-base">
+                      {workout.name ?? "Untitled Workout"}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="pb-4 px-4">
+                    {workout.notes && (
+                      <p className="text-sm text-muted-foreground">
+                        {workout.notes}
+                      </p>
+                    )}
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         )}
