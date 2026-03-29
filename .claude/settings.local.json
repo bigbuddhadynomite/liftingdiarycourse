@@ -13,7 +13,12 @@
       "Bash(npm run:*)",
       "Bash(npx tsc:*)",
       "Bash(npx shadcn@latest add calendar popover card --yes)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npx:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
